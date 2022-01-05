@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(216, 210, 210);
+            color: white; /* comentario em css*/
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(165, 19, 43);
+        }
+    </style>
+</head>
+<body>
+   <h1>Olá, mundo! </h1> <!-- isso é um comentario no html-->
+   <p> aula do curso de JS</p>
+   <script>
+       var n1 = Number(window.prompt('Digite um número:')); //prompt recebe uma string
+       var n2 = Number(window.prompt('Digite outro número:'));
+       var soma = n1 + n2;
+       window.alert('A soma dos valores é: '+ soma); 
+       window.alert(`A soma entre ${n1} e ${n2} é ${soma}`) //concatenação
+
+       //+ para adição: number + number
+       //+ para concatenação: string + string
+       //Number.parseInt(n) transforma string p/ inteiro
+       //Number.parseFloat(n) transforma string p/ float
+       //String(n) ou n.toString() transforma number em string
+
+       /* para concatenar pode ser utilizado: 
+    `a soma dos valores é ${soma}` (crase invertida, sifrão e chaves)
+       */ 
+   </script>
+</body>
+</html>
